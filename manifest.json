@@ -1,10 +1,15 @@
 {
-    "apiVersion": "v1",
+  "manifest": {
     "kind": "ConfigMap",
+    "action": "create",
     "metadata": {
-        "name": "example-configmap"
+      "namespace": "default",
+      "name": "my-config"
     },
     "data": {
-        "key": "value"
+      "key1": "value1",
+      "key2": "value2"
     }
+  }
 }
+
